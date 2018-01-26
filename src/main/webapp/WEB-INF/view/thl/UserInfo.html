@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>User Info</title>
+</head>
+<body>
+	<h1 align="center">This is an example for Thymeleaf View</h1>
+	<br/>
+	<form th:action="@{/users/thymeleaf}" method="post" th:object="${user}">
+		<table align="center">
+			<tr>
+				<td><label>Name:</label></td>
+				<td><input type="text" th:field="*{name}"  required="required"/></td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td><label>Age:</label></td>
+				<td><input type="text" th:field="*{age}"  required="required"/></td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td><label>Email:</label></td>
+				<td><input type="text" th:field="*{email}" required="required"/></td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td><label>Mobile:</label></td>
+				<td><input type="text" th:field="*{mobile}" required="required"/></td>
+			</tr>
+			<tr></tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

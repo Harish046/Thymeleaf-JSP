@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>User Info</title>
+</head>
+<body>
+	<h1 align="center">This is an example for Thymeleaf View</h1>
+	<br />
+	<table align="center">
+		<tr>
+			<td><label>Name:</label></td>
+			<td th:text="${user.name}"></td>
+		</tr>
+		<tr>
+			<td><label>Age:</label></td>
+			<td th:text="${user.age}"></td>
+		</tr>
+		<tr>
+			<td><label>Email:</label></td>
+			<td th:text="${user.email}"></td>
+		</tr>
+		<tr>
+			<td><label>Mobile:</label></td>
+			<td th:text="${user.mobile}"></td>
+		</tr>
+	</table>
+</body>
+</html>

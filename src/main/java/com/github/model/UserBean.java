@@ -1,5 +1,11 @@
 package com.github.model;
-
+/**
+ * @author Harish
+ * 
+ * https://github.com/Harish046
+ * 
+ * <code>UserBean.class</code> 
+ */
 public class UserBean {
 	
 	private String name;

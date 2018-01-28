@@ -1,31 +1,49 @@
+<!-- @author Harish, https://github.com/Harish046, UserInfo.html -->
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>User Info</title>
+<style>
+body {
+	background-color: #262626;
+}
+
+h1, table, nav {
+	font-family: sans-serif;
+	color: #ffffff;
+}
+
+a {
+	color: #cc0000;
+}
+</style>
 </head>
 <body>
-	<h1 align="center">This is an example for Thymeleaf View</h1>
-	<br/>
-	<form th:action="@{/users/thymeleaf}" method="post" th:object="${user}">
+	<nav>
+		<a th:href="@{/}">Home</a>&nbsp;/&nbsp;<a>User info</a>
+	</nav>
+	<h1 align="center">T&nbsp;&nbsp;h&nbsp;&nbsp;y&nbsp;&nbsp;m&nbsp;&nbsp;e&nbsp;&nbsp;l&nbsp;&nbsp;e&nbsp;&nbsp;a&nbsp;&nbsp;f</h1>
+	<br />
+	<form th:action="@{/thl/users}" method="post" th:object="${user}">
 		<table align="center">
 			<tr>
 				<td><label>Name:</label></td>
-				<td><input type="text" th:field="*{name}"  required="required"/></td>
+				<td><input type="text" th:field="*{name}" required="required" /></td>
 			</tr>
 			<tr></tr>
 			<tr>
 				<td><label>Age:</label></td>
-				<td><input type="text" th:field="*{age}"  required="required"/></td>
+				<td><input type="text" th:field="*{age}" required="required" /></td>
 			</tr>
 			<tr></tr>
 			<tr>
 				<td><label>Email:</label></td>
-				<td><input type="text" th:field="*{email}" required="required"/></td>
+				<td><input type="text" th:field="*{email}" required="required" /></td>
 			</tr>
 			<tr></tr>
 			<tr>
 				<td><label>Mobile:</label></td>
-				<td><input type="text" th:field="*{mobile}" required="required"/></td>
+				<td><input type="text" th:field="*{mobile}" required="required" /></td>
 			</tr>
 			<tr></tr>
 			<tr>

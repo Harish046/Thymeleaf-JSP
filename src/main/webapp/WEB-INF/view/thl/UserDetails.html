@@ -1,10 +1,30 @@
+<!-- @author Harish, https://github.com/Harish046, UserDetails.html -->
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>User Info</title>
+<title>User Details</title>
+<style>
+body {
+	background-color: #262626;
+}
+
+h1, table, div, nav {
+	font-family: sans-serif;
+	color: #ffffff;
+}
+
+a {
+	color: #cc0000;
+}
+</style>
 </head>
 <body>
-	<h1 align="center">This is an example for Thymeleaf View</h1>
+	<nav>
+		<a th:href="@{/}">Home</a>&nbsp;/&nbsp;<a th:href="@{/thl/users}">User
+			info</a>&nbsp;/&nbsp;<a>User details</a>
+	</nav>
+
+	<h1 align="center">T&nbsp;&nbsp;h&nbsp;&nbsp;y&nbsp;&nbsp;m&nbsp;&nbsp;e&nbsp;&nbsp;l&nbsp;&nbsp;e&nbsp;&nbsp;a&nbsp;&nbsp;f</h1>
 	<br />
 	<table align="center">
 		<tr>
@@ -24,5 +44,8 @@
 			<td th:text="${user.mobile}"></td>
 		</tr>
 	</table>
+	<div align="right">
+		Go to jsp View <a th:href="@{/jsp/users}"> Go!</a>
+	</div>
 </body>
 </html>
